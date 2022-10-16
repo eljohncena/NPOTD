@@ -15,23 +15,25 @@ struct ContentView: View {
      @State var copyright = ""
 
     var body: some View {
-        ScrollView {
+        VStack {
             VStack {
                 Text(title)
                     .font(.title)
                     .fontWeight(.bold)
                 imageView
                     .resizable()
-                    .scaledToFit()
+                .scaledToFit()
+
+            }
+            ScrollView {
                 Text(description)
             }
-            .padding(.horizontal, 10.0)
-            
+            .task {
+                await startProcess()
+                }
+            }
+        .padding(.horizontal, 10.0)
         }
-        .task {
-            await startProcess()
-        }
-    }
     
     func startProcess() async {
         do{
@@ -57,7 +59,7 @@ struct ContentView: View {
     }
 
     func updateUI(with error: Error) {
-        title = "Error fetching image"
+        title = "Error fetching information"
         imageView = Image(systemName: "exclamationmark.octogon")
         description = error.localizedDescription
         copyright = ""

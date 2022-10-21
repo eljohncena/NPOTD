@@ -32,7 +32,7 @@ class PhotoInfoController {
         }
         
         
-        let jsonDecoder = JSONDecoder() 
+        let jsonDecoder = JSONDecoder()
         let photoInfo = try jsonDecoder.decode(PhotoInfo.self, from: data)
         return (photoInfo)
     }

@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct PhotoInfo: Codable {
     var title: String

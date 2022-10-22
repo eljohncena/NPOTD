@@ -12,26 +12,28 @@ struct ContentView: View {
     @StateObject var manager = ViewController()
     
     var body: some View {
-        VStack {
+        
+        NavigationView {
             VStack {
-                Text(manager.title)
-                    .font(.title)
-                    .fontWeight(.bold)
-                manager.imageView
-                    .resizable()
-                .scaledToFit()
-
-            }
-            ScrollView {
-                Text(manager.description)
-            }
-            .task {
-                await manager.startProcess()
+                NavigationLink(destination: PhotoView(photo: manager) ) {
+                    manager.imageView
+                        .resizable()
+                        .scaledToFit()
                 }
-            }
-        .padding(.horizontal, 10.0)
-        }
+                    .navigationTitle(manager.title).font(.title)
+                    .navigationBarTitleDisplayMode(.inline)
+                Text(manager.copyright)
 
+                ScrollView {
+                    Text(manager.description)
+                }
+                .task {
+                    await manager.startProcess()
+                    }
+                }
+            .padding(.horizontal, 10.0)
+            }
+        }
 }
 
 struct ContentView_Previews: PreviewProvider {

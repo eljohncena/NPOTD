@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F332880E2903A33D002FDC30 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F332880D2903A33D002FDC30 /* PhotoView.swift */; };
 		F374DFF628FB7727003347F0 /* NPOTDApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374DFF528FB7727003347F0 /* NPOTDApp.swift */; };
 		F374DFF828FB7727003347F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F374DFF728FB7727003347F0 /* ContentView.swift */; };
 		F374DFFA28FB7728003347F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F374DFF928FB7728003347F0 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F332880D2903A33D002FDC30 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		F374DFF228FB7727003347F0 /* NPOTD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NPOTD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F374DFF528FB7727003347F0 /* NPOTDApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NPOTDApp.swift; sourceTree = "<group>"; };
 		F374DFF728FB7727003347F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				F374E00528FB7AC3003347F0 /* PhotoInfoController.swift */,
 				F374E00728FB7B4F003347F0 /* ViewController.swift */,
 				F374DFF728FB7727003347F0 /* ContentView.swift */,
+				F332880D2903A33D002FDC30 /* PhotoView.swift */,
 				F374DFF928FB7728003347F0 /* Assets.xcassets */,
 				F374DFFB28FB7729003347F0 /* Preview Content */,
 			);
@@ -149,6 +152,7 @@
 				F374E00828FB7B4F003347F0 /* ViewController.swift in Sources */,
 				F374E00428FB7A90003347F0 /* PhotoInfo.swift in Sources */,
 				F374DFF828FB7727003347F0 /* ContentView.swift in Sources */,
+				F332880E2903A33D002FDC30 /* PhotoView.swift in Sources */,
 				F374E00628FB7AC3003347F0 /* PhotoInfoController.swift in Sources */,
 				F374DFF628FB7727003347F0 /* NPOTDApp.swift in Sources */,
 			);
